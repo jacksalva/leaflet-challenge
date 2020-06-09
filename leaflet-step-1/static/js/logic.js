@@ -1,7 +1,7 @@
 var apiKey = "pk.eyJ1IjoiamFja3NhbHZhIiwiYSI6ImNrOXpyZDJ3ZTB5a3czZXF1MjZxcTl3aG8ifQ.BnqnVj8yn2zTZf0-iqgUTg";
 
 //create map
-var map = L.map("mapid", {
+var map = L.map("map", {
     center: [40.73, -74.0059],
     zoom: 12
 });
@@ -9,9 +9,9 @@ var map = L.map("mapid", {
 //baselayer
 var lightmap = L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}", {
   attribution: "Map data &copy; <a href=\"http://openstreetmap.org\">OpenStreetMap</a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA</a>, Imagery © <a href=\"http://mapbox.com\">Mapbox</a>",
-  maxZoom: 18,
+  maxZoom: 7,
   id: "mapbox.light",
-  accessToken: API_KEY
+  accessToken: apiKey
 }).addTo(map);
 
 //link to data
